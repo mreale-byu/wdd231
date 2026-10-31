@@ -1,0 +1,241 @@
+
+/* The "palette" comes from my profile picture: deep forest green, a cream
+   bar, a light leaf green for the current page, and gold in the footer. */
+:root {
+  --color-brand: #1e4620;
+  --color-brand-deep: #15300f;
+  --color-on-brand: #ffffff;
+  --color-surface: #f4f1df;
+  --color-page: #e3dfc6;
+  --color-accent: #a7d18a;
+  --color-footer-text: #f0d580;
+  --color-text: #1b1b1b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+	padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: var(--color-text);
+  background-color: var(--color-page);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: var(--color-brand);
+  color: var(--color-on-brand);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px 20px 0 20px;
+}
+
+#site-logo {
+  display: block;
+  height: 49px;
+  width: auto;
+}
+
+header span {
+  font-size: 1.6rem;
+}
+
+nav {
+  flex: 1 0 100%;
+  margin: 0 -20px;
+  background-color: var(--color-surface);
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+	display: none;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: var(--color-brand);
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+nav a:hover,
+nav a:active {
+	color: var(--color-on-brand);
+	background-color: var(--color-brand-deep);
+}
+
+nav a.active {
+	color: var(--color-brand-deep);
+	background-color: var(--color-accent);
+}
+
+nav.show a {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+	content: "X" / "";
+}
+
+#menu {
+	display: block;
+	margin-left: auto;
+	appearance: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+	text-align: right;
+	font-family: inherit;
+	font-size: 2rem;
+	font-weight: 700;
+	padding: 0.5rem 0.75rem;
+	color: var(--color-on-brand);
+}
+
+#menu::before {
+	content: "≡";
+	content: "≡" / "";
+}
+
+main {
+  margin: 1rem 0;
+  padding: 0 1rem;
+  flex: 1;
+}
+
+main > h1 {
+  text-align: left;
+  margin: 0 0 0.5rem;
+  color: var(--color-brand);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card {
+  border: 1px solid var(--color-brand);
+  background-color: var(--color-surface);
+  display: flex;
+  flex-direction: column;
+}
+
+.card h2 {
+  background-color: var(--color-brand);
+  color: var(--color-on-brand);
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.card > *:not(h2) {
+  margin: 1rem;
+}
+
+.card > *:not(h2) + *:not(h2) {
+  margin-top: 0;
+}
+
+.card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.filters {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filter {
+  flex: 1;
+  appearance: none;
+  border: 1px solid var(--color-brand);
+  background-color: var(--color-page);
+  color: var(--color-brand);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.filter:hover {
+  background-color: var(--color-accent);
+  color: var(--color-brand-deep);
+}
+
+.filter:focus-visible {
+  outline: 2px solid var(--color-brand-deep);
+  outline-offset: 2px;
+}
+
+.filter[aria-pressed="true"] {
+  background-color: var(--color-brand);
+  color: var(--color-on-brand);
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.course {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--color-brand);
+  background-color: var(--color-page);
+  color: var(--color-brand);
+  font-weight: 700;
+  padding: 0.5rem;
+}
+
+.course.completed {
+  border-color: var(--color-brand-deep);
+  background-color: var(--color-accent);
+  color: var(--color-brand-deep);
+}
+
+.course-mark {
+  visibility: hidden;
+}
+
+.course.completed .course-mark {
+  visibility: visible;
+}
+
+footer {
+  background-color: var(--color-brand);
+  color: var(--color-footer-text);
+  text-align: center;
+  padding: 10px 20px;
+}
