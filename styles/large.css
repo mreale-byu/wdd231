@@ -1,6 +1,4 @@
-/* Media query for wider than mobile viewports: the stacked menu becomes a row
-   and the hamburger goes away. A .show left over from a resize is harmless
-   here, since it only sets `display` on the links, which this query overrides. */
+/* Media query for wider than mobile viewports. */
 @media only screen and (min-width: 40em) {
 	nav {
 		flex-direction: row;

@@ -1,3 +1,3 @@
 # wdd231
 
-Personal repo for the **wdd231** course.
+Personal repo from Luiz MR Lemos for the **wdd231** course.
