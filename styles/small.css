@@ -10,6 +10,7 @@
   --color-accent: #a7d18a;
   --color-footer-text: #f0d580;
   --color-text: #1b1b1b;
+  --color-shadow: rgba(21, 48, 15, 0.3);
 }
 
 * {
@@ -81,6 +82,10 @@ nav a.active {
 
 nav.show a {
 	display: block;
+}
+
+#primary-nav a[hidden] {
+	display: none;
 }
 
 #menu.show::before {
@@ -182,6 +187,8 @@ main > h1 {
   font-size: 1rem;
   font-weight: 700;
   padding: 0.5rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px var(--color-shadow);
   cursor: pointer;
   transition: 0.5s;
 }
@@ -208,6 +215,10 @@ main > h1 {
   list-style: none;
 }
 
+.credits {
+  text-align: center;
+}
+
 .course {
   display: flex;
   align-items: center;
@@ -217,6 +228,7 @@ main > h1 {
   color: var(--color-brand);
   font-weight: 700;
   padding: 0.5rem;
+  border-radius: 6px;
 }
 
 .course.completed {
@@ -231,6 +243,26 @@ main > h1 {
 
 .course.completed .course-mark {
   visibility: visible;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--color-page);
+  margin: -10px -20px 10px;
+  padding: 1rem;
+}
+
+.social img {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.social a:focus-visible {
+  outline: 2px solid var(--color-brand-deep);
+  outline-offset: 2px;
 }
 
 footer {
