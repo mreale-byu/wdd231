@@ -36,18 +36,20 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
   padding: 10px 20px 0 20px;
 }
 
 #site-logo {
   display: block;
-  height: 49px;
+  height: 44px;
   width: auto;
 }
 
 header span {
   font-size: 1.6rem;
+  flex: 1;
+  min-width: 0;
 }
 
 nav {
