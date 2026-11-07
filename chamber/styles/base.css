@@ -1,0 +1,270 @@
+@charset "UTF-8";
+
+/* The color palette for the site is based on the colors of the SJC city flag, with 
+   some variations made to achieve AAA contrast. */
+
+:root {
+	/* Palette */
+	--navy-900: #0a2c47;
+	--navy-700: #0f3f65;
+	--slate-600: #2f4d68;
+	--gold-500: #fcb100;
+	--gold-300: #ffd36b;
+	--mist: #eef3f8;
+	--cream: #fff6de;
+	--ice: #dce6f0;
+	--line: #c9d8e6;
+	--white: #ffffff;
+
+	/* Roles: page */
+	--color-page: var(--mist);
+	--color-surface: var(--white);
+	--color-border: var(--line);
+	--color-text: var(--navy-900);
+	--color-text-muted: var(--slate-600);
+	--color-link: var(--navy-900);
+
+	/* Roles: header */
+	--color-header-bg: var(--navy-900);
+	--color-header-text: var(--white);
+	--color-header-hover-bg: var(--navy-700);
+	--color-header-current: var(--gold-300);
+	--color-rule: var(--gold-500);
+
+	/* Roles: footer */
+	--color-footer-bg: var(--navy-900);
+	--color-footer-text: var(--ice);
+	--color-footer-heading: var(--gold-300);
+
+	/* Roles: focus ring, one per background family */
+	--color-focus-on-dark: var(--gold-500);
+	--color-focus-on-light: var(--navy-900);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Roboto', system-ui, sans-serif;
+	font-weight: 400;
+	line-height: 1.5;
+	color: var(--color-text);
+	background-color: var(--color-page);
+}
+
+img {
+	max-width: 100%;
+}
+
+:focus-visible {
+	outline: 3px solid var(--color-focus-on-light);
+	outline-offset: 2px;
+}
+
+/* ---------- Header ---------- */
+
+header {
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 0.75rem 1rem;
+	color: var(--color-header-text);
+	background-color: var(--color-header-bg);
+	border-bottom: 4px solid var(--color-rule);
+}
+
+header :focus-visible {
+	outline-color: var(--color-focus-on-dark);
+}
+
+#site-logo {
+	width: 48px;
+	height: 48px;
+}
+
+header > span {
+	font-size: 1.15rem;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+/* The hamburger: visible only on small screens, hidden in large.css. */
+#menu {
+	grid-column: 3;
+	grid-row: 1;
+	width: 2.75rem;
+	height: 2.75rem;
+	font-size: 1.5rem;
+	line-height: 1;
+	color: var(--color-header-text);
+	background-color: transparent;
+	border: 1px solid var(--color-header-text);
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#menu::before {
+	content: '☰';
+}
+
+#menu[aria-expanded='true']::before {
+	content: '✕';
+}
+
+/* The nav occupies the full width below the logo row on small screens.
+   navigation.js opens it by setting aria-expanded="true" on #menu. */
+#primary-nav {
+	grid-column: 1 / -1;
+	grid-row: 2;
+	display: none;
+	flex-direction: column;
+}
+
+header:has(#menu[aria-expanded='true']) #primary-nav {
+	display: flex;
+}
+
+#primary-nav a {
+	padding: 0.75rem 0.5rem;
+	font-weight: 500;
+	text-decoration: none;
+	color: var(--color-header-text);
+	border-bottom: 1px solid var(--color-header-hover-bg);
+}
+
+#primary-nav a:hover {
+	background-color: var(--color-header-hover-bg);
+}
+
+#primary-nav a.active {
+	color: var(--color-header-current);
+	font-weight: 700;
+}
+
+/* ---------- Main ---------- */
+
+main {
+	flex: 1;
+	width: 100%;
+	max-width: 64rem;
+	margin: 0 auto;
+	padding: 1.5rem 1rem 2.5rem;
+}
+
+main h1 {
+	margin: 0 0 1.25rem;
+	padding-bottom: 0.5rem;
+	font-size: 1.75rem;
+	line-height: 1.2;
+	border-bottom: 2px solid var(--color-border);
+}
+
+main a {
+	color: var(--color-link);
+}
+
+/* The view switch sits centred under the heading on small screens and moves
+   to the right in large.css. */
+.directory-view {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.directory-view span {
+	font-size: 0.875rem;
+	color: var(--color-text-muted);
+}
+
+.directory-view button {
+	padding: 0.5rem 0.9rem 0.5rem 2.25rem;
+	font-family: inherit;
+	font-size: 0.9rem;
+	font-weight: 500;
+	color: var(--color-text);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: left 0.6rem center;
+	background-size: 20px 20px;
+	border: 2px solid var(--color-border);
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+/* The border alone carries the selected state, set by directory.js. */
+.directory-view button[aria-pressed='true'] {
+	border-color: var(--color-text);
+}
+
+.directory-view button:hover {
+	background-color: var(--color-surface);
+}
+
+#grid-view {
+	background-image: url('../images/grid-view.svg');
+}
+
+#list-view {
+	background-image: url('../images/list-view.png');
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+	display: grid;
+	gap: 1.25rem;
+	justify-items: center;
+	text-align: center;
+	padding: 1.5rem 1rem;
+	color: var(--color-footer-text);
+	background-color: var(--color-footer-bg);
+	border-top: 4px solid var(--color-rule);
+}
+
+footer :focus-visible {
+	outline-color: var(--color-focus-on-dark);
+}
+
+footer p {
+	margin: 0;
+	font-size: 0.875rem;
+}
+
+footer .address p:first-child {
+	font-weight: 700;
+	color: var(--color-footer-heading);
+}
+
+footer .social {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+/* The icon artwork is white on transparency, so it is used as supplied
+   on the navy footer; hover deepens the plate behind it instead. */
+footer .social a {
+	display: inline-flex;
+	padding: 0.375rem;
+	border-radius: 6px;
+}
+
+footer .social a:hover {
+	background-color: var(--color-header-hover-bg);
+}
+
+footer .social img {
+	width: 32px;
+	height: 32px;
+}

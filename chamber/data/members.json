@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Embraer",
+    "address": "Av. Brig F.Lima, 2170, Putim",
+    "phone": "+55 12 3313-1000",
+    "url": "https://embraer.com/br/pt",
+    "image": "embraer-logo.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Akaer",
+    "address": "Av. Cesare Lattes, 501, Coqueiro",
+    "phone": "+55 12 2139-1100",
+    "url": "https://www.akaer.com.br",
+    "image": "aker-logo.jpg",
+    "membership": 3
+  },
+  {
+    "name": "IACIT",
+    "address": "Rod. Presidente Dutra, Prédio 4",
+    "phone": "+55 12 3797-7777",
+    "url": "https://www.iacit.com.br",
+    "image": "iacit-logo.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Visiona Tecnologia Espacial",
+    "address": "R. Dr. Bondensan, 500, E. de Melo",
+    "phone": "+55 12 2138-5801",
+    "url": "https://www.visionaespacial.com.br",
+    "image": "visiona-logo.jpg",
+    "membership": 2
+  },
+  {
+    "name": "SIATT",
+    "address": "R. Estácio Nascimento, 401, Limoeiro",
+    "phone": "+55 12 2012-0070",
+    "url": "https://www.siatt.com.br",
+    "image": "siatt-logo.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Orbital Engenharia",
+    "address": "Av. JB Soares Queiroz, 1821, Indústrias",
+    "phone": "+55 12 3933-2230",
+    "url": "https://orbitalengenharia.com.br",
+    "image": "orbital-logo.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Graúna Aerospace",
+    "address": "R. Januária, 1100, Chácaras Reunidas",
+    "phone": "+55 12 3221-3500",
+    "url": "https://graunaaerospace.com.br",
+    "image": "grauna-logo.jpg",
+    "membership": 1
+  },
+  {
+    "name": "ALTAVE",
+    "address": "Av. Dr. A. Bondensan, 500",
+    "phone": "+55 12 3913-5900",
+    "url": "https://altave.com.br",
+    "image": "altave-logo.jpg",
+    "membership": 1
+  },
+  {
+    "name": "AirTech",
+    "address": "R. Letônia, 28 e 38, Vila Nair",
+    "phone": "+55 11 98586-5088",
+    "url": "https://www.airtech.tech",
+    "image": "airtech-logo.jpg",
+    "membership": 1
+  },
+  {
+    "name": "PlasmaHub",
+    "address": "Av. Dr. Pontes, 8500, Galpão R4",
+    "phone": "+55 11 91188-8090",
+    "url": "https://plasmahub.com.br",
+    "image": "plasmahub-logo.jpg",
+    "membership": 1
+  }
+]

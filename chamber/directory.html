@@ -8,35 +8,65 @@
         content="WDD 231 – Chamber of commerce project page using semantic HTML elements, CSS and JS.">
     <meta name="author" content="Luiz MR Lemos">
     <meta name="keywords" content="WDD 231, Dynamic Web Fundamentals, HTML, CSS, JavaScript">
-    <title>Directory</title>
+    <title>Directory | SJC Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="favicon.ico" sizes="32x32 64x64">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64x64.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
 </head>
 
 <body>
 
     <header>
-        <img id="site-logo" src="images/logo.svg" alt="The logo" width="189" height="128">
-        <span>Luiz MR Lemos</span>
-        <button id="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"></button>
+        <img id="site-logo" src="images/site-logo.svg" alt="The Chamber of Commerce site logo" width="64" height="64">
+        <span>SJC Chamber of Commerce</span>
         <nav id="primary-nav">
             <a href="#">Home</a>
             <a href="#" class="active" aria-current="page">Directory</a>
             <a href="#">Join</a>
             <a href="#">Discover</a>
-            <a href="#" hidden>Hidden Link</a>
         </nav>
+        <button id="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"></button>
     </header>
     <main>
         <h1>Directory</h1>
+        <div class="directory-view">
+            <span>View as:</span>
+            <button id="grid-view" type="button" aria-label="Grid view" aria-pressed="true">Grid</button>
+            <button id="list-view" type="button" aria-label="List view" aria-pressed="false">List</button>
+        </div>
+        <div id="directory">do not implement yet</div>
     </main>
     <footer>
+        <div class="address">
+            <p>SJC Chamber of Commerce</p>
+            <p>Rua Francisco Paes, 9956 Centro, São José dos Campos, SP</p>  
+            <p>CEP 12210-100</p>
+        </div>
+        <div class="social">
+            <a href="https://github.com/mreale-byu/wdd231">
+                <img src="images/github.png" alt="GitHub repository for this project" width="32" height="32">
+            </a>
+            <a href="https://www.linkedin.com/">
+                <img src="images/linkedin.png" alt="LinkedIn" width="32" height="32">
+            </a>
+            <a href="https://x.com/">
+                <img src="images/x-social.png" alt="X social network" width="32" height="32">
+            </a>
+        </div>
+        <div class="author">
+           <p>WDD231 Chamber of Commerce Project</p> 
+           <p>©️<span id="currentyear"></span> Luiz MR Lemos, Brazil</p>
+           <p>Last modification: <span id="lastModified"></span></p> 
+        </div>
     </footer>
 </body>
 
