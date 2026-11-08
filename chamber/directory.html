@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="WDD 231 – Chamber of commerce project page using semantic HTML elements, CSS and JS.">
+        content="Browse the member businesses of the São José dos Campos Chamber of Commerce: addresses, phone numbers and membership levels.">
     <meta name="author" content="Luiz MR Lemos">
     <meta name="keywords" content="WDD 231, Dynamic Web Fundamentals, HTML, CSS, JavaScript">
     <title>Directory | SJC Chamber of Commerce</title>
+
+    <meta property="og:title" content="Directory | SJC Chamber of Commerce">
+    <meta property="og:description"
+        content="Browse the member businesses of the São José dos Campos Chamber of Commerce: addresses, phone numbers and membership levels.">
+    <meta property="og:image" content="https://mreale-byu.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://mreale-byu.github.io/wdd231/chamber/directory.html">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -19,7 +25,7 @@
     <link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64x64.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script type="module" src="scripts/directory.js"></script>
     <script src="scripts/dates.js" defer></script>
 </head>
 
@@ -43,7 +49,7 @@
             <button id="grid-view" type="button" aria-label="Grid view" aria-pressed="true">Grid</button>
             <button id="list-view" type="button" aria-label="List view" aria-pressed="false">List</button>
         </div>
-        <div id="directory">do not implement yet</div>
+        <div id="directory"></div>
     </main>
     <footer>
         <div class="address">
@@ -64,7 +70,7 @@
         </div>
         <div class="author">
            <p>WDD231 Chamber of Commerce Project</p> 
-           <p>©️<span id="currentyear"></span> Luiz MR Lemos, Brazil</p>
+           <p>©️<span id="currentyear"></span> Luiz MR Lemos</p>
            <p>Last modification: <span id="lastModified"></span></p> 
         </div>
     </footer>

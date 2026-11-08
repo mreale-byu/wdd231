@@ -1,7 +1,4 @@
-/* Wider-viewport styles for the SJC Chamber of Commerce site.
-   Small-screen rules live in base.css; these only override what changes.
-   48em is the width at which the wordmark and the four nav tabs stop
-   competing for the header row. */
+/* Wider-viewport overrides. The small-screen rules live in base.css; uses 48em */
 
 @media only screen and (min-width: 48em) {
 	header {
@@ -22,7 +19,6 @@
 		display: none;
 	}
 
-	/* The nav returns to the first row, as a row of tabs on the right. */
 	#primary-nav {
 		grid-column: 3;
 		grid-row: 1;
@@ -43,7 +39,7 @@
 	}
 
 	main {
-		padding: 2rem 1.5rem 3rem;
+		padding: 1rem 1.5rem 3rem;
 	}
 
 	main h1 {
@@ -52,6 +48,40 @@
 
 	.directory-view {
 		justify-content: flex-end;
+	}
+
+	#directory.grid {
+		grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	}
+
+	#directory.list .member-row {
+		display: grid;
+		grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.7fr) minmax(0, 1fr) 7rem 11rem;
+		align-items: center;
+		gap: 1rem;
+		padding: 0.75rem 1rem;
+		text-align: left;
+	}
+
+	#directory.list .member-row h2 {
+		margin: 0;
+		font-size: 1rem;
+	}
+
+	#directory.list .row-link {
+		justify-self: stretch;
+		margin-top: 0;
+		text-align: center;
+	}
+
+	#directory.list .row-label {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		clip-path: inset(50%);
+		white-space: nowrap;
 	}
 
 	footer {
