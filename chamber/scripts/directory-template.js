@@ -5,7 +5,7 @@ export function memberCard(member) {
 		<article class="member-card">
 			<h2>${member.name}</h2>
 			<div class="member-logo">
-				<img src="${member.logo}" alt="${member.name} logo" width="1000" height="1000" loading="lazy">
+				<img src="${member.logo}" alt="${member.name} logo" width="512" height="512" loading="lazy">
 			</div>
 			<div class="member-details">
 				<p class="member-address">${member.address}</p>

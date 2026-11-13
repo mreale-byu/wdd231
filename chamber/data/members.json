@@ -4,7 +4,7 @@
     "address": "Av. Brig F.Lima, 2170, Putim",
     "phone": "+55 12 3313-1000",
     "url": "https://embraer.com/br/pt",
-    "image": "embraer-logo.jpg",
+    "image": "embraer-logo.webp",
     "membership": 3
   },
   {
@@ -12,7 +12,7 @@
     "address": "Av. Cesare Lattes, 501, Coqueiro",
     "phone": "+55 12 2139-1100",
     "url": "https://www.akaer.com.br",
-    "image": "akaer-logo.jpg",
+    "image": "akaer-logo.webp",
     "membership": 3
   },
   {
@@ -20,7 +20,7 @@
     "address": "Rod. Presidente Dutra, Prédio 4",
     "phone": "+55 12 3797-7777",
     "url": "https://www.iacit.com.br",
-    "image": "iacit-logo.jpg",
+    "image": "iacit-logo.webp",
     "membership": 3
   },
   {
@@ -28,7 +28,7 @@
     "address": "R. Dr. Bondensan, 500, E. de Melo",
     "phone": "+55 12 2138-5801",
     "url": "https://www.visionaespacial.com.br",
-    "image": "visiona-logo.jpg",
+    "image": "visiona-logo.webp",
     "membership": 2
   },
   {
@@ -36,7 +36,7 @@
     "address": "R. Estácio Nascimento, 401, Limoeiro",
     "phone": "+55 12 2012-0070",
     "url": "https://www.siatt.com.br",
-    "image": "siatt-logo.jpg",
+    "image": "siatt-logo.webp",
     "membership": 2
   },
   {
@@ -44,7 +44,7 @@
     "address": "Av. JB Soares Queiroz, 1821, Indústrias",
     "phone": "+55 12 3933-2230",
     "url": "https://orbitalengenharia.com.br",
-    "image": "orbital-logo.jpg",
+    "image": "orbital-logo.webp",
     "membership": 2
   },
   {
@@ -52,7 +52,7 @@
     "address": "R. Januária, 1100, Chácaras Reunidas",
     "phone": "+55 12 3221-3500",
     "url": "https://graunaaerospace.com.br",
-    "image": "grauna-logo.jpg",
+    "image": "grauna-logo.webp",
     "membership": 1
   },
   {
@@ -60,7 +60,7 @@
     "address": "Av. Dr. A. Bondensan, 500",
     "phone": "+55 12 3913-5900",
     "url": "https://altave.com.br",
-    "image": "altave-logo.jpg",
+    "image": "altave-logo.webp",
     "membership": 1
   },
   {
@@ -68,7 +68,7 @@
     "address": "R. Letônia, 28 e 38, Vila Nair",
     "phone": "+55 11 98586-5088",
     "url": "https://www.airtech.tech",
-    "image": "airtech-logo.jpg",
+    "image": "airtech-logo.webp",
     "membership": 1
   },
   {
@@ -76,7 +76,7 @@
     "address": "Av. Dr. Pontes, 8500, Galpão R4",
     "phone": "+55 11 91188-8090",
     "url": "https://plasmahub.com.br",
-    "image": "plasmahub-logo.jpg",
+    "image": "plasmahub-logo.webp",
     "membership": 1
   }
 ]
