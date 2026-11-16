@@ -1,41 +1,13 @@
 /* Loads the member data and renders the directory as a card grid or a list. */
 
+import { fetchMembers, prepareMembers } from "./members.js";
 import { memberCard, memberRow } from "./directory-template.js";
-
-const membershipLevels = {
-	1: { label: "Member", modifier: "badge-member" },
-	2: { label: "Silver", modifier: "badge-silver" },
-	3: { label: "Gold", modifier: "badge-gold" }
-};
 
 const gridButton = document.getElementById("grid-view");
 const listButton = document.getElementById("list-view");
 const directory = document.getElementById("directory");
 
 let members = [];
-
-async function fetchMembers() {
-	const response = await fetch("data/members.json");
-	if (!response.ok) {
-		throw new Error(`Member data request failed with status ${response.status}`);
-	}
-	return response.json();
-}
-
-function prepareMembers(records) {
-	return records.map((record) => {
-		const level = membershipLevels[record.membership] ?? membershipLevels[1];
-		return {
-			name: record.name,
-			address: record.address,
-			phone: record.phone,
-			url: record.url,
-			logo: `images/${record.image}`,
-			level: level.label,
-			levelClass: level.modifier
-		};
-	});
-}
 
 function renderMembers(template) {
 	directory.innerHTML = members.map(template).join("");

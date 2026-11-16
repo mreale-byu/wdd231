@@ -1,0 +1,26 @@
+[
+	{
+		"name": "Downtown Business Breakfast",
+		"when": "Tue 1 Dec 2026 · 08:00",
+		"venue": "Rua Francisco Paes, 1726, Centro",
+		"note": "Monthly meet-up for retailers and service firms, with a short talk on seasonal trade and open-table networking over breakfast.",
+		"access": 1,
+		"url": "#"
+	},
+	{
+		"name": "Aerospace Supplier Forum",
+		"when": "Thu 10 Dec 2026 · 18:30",
+		"venue": "Parque Tecnológico, São José dos Campos",
+		"note": "Procurement leads from Embraer and tier-one suppliers present their 2027 sourcing plans, followed by scheduled one-to-one meetings.",
+		"access": 2,
+		"url": "#"
+	},
+	{
+		"name": "Year-End Networking Gala",
+		"when": "Fri 18 Dec 2026 · 20:00",
+		"venue": "Hotel Monreale, Jardim Aquarius",
+		"note": "Annual dinner with the Member of the Year awards, a showcase of new member businesses and live music to close the season.",
+		"access": 3,
+		"url": "#"
+	}
+]
