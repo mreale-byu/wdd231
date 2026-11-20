@@ -46,9 +46,60 @@
     </header>
     <main>
         <h1>Join</h1>
-        <div class="TO-BE-DEFINED">
+        <div class="join-grid">
+            <article class="join-card">
+                <h2>MEMBERSHIP FORM</h2>
+                <form class="join-form" method="get" action="thankyou.html">
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+                    <label class="field" for="first-name">First Name*
+                        <input type="text" id="first-name" name="first-name" required autocomplete="given-name" title="Your first name">
+                    </label>
+                    <label class="field" for="last-name">Last Name*
+                        <input type="text" id="last-name" name="last-name" required autocomplete="family-name" title="Your last name">
+                    </label>
+                    <label class="field" for="organizational-title">Organizational Title*
+                        <input type="text" id="organizational-title" name="organizational-title" required autocomplete="organization-title" pattern="A-Za-z\- ]{7,}" title="Your organizational title (must be at least 7 characters long and contain only letters, hyphens, and spaces)">
+                    </label>
+                    <label class="field" for="email">Email*
+                        <input type="email" id="email" name="email" required autocomplete="email" placeholder="name@organization.com" title="Your corporate email address">
+                    </label>
+                    <label class="field" for="phone">Mobile Phone Number*
+                        <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Your mobile phone number">
+                    </label>
+                    <label class="field" for="organizational-name">Organizational Name*
+                        <input type="text" id="organizational-name" name="organizational-name" required autocomplete="organization" title="Your organizational name">
+                    </label>
+                    <label class="field" for="membership-level">Membership Level*
+                        <select id="membership" name="membership" required title="Select your desired membership level">
+                            <option value="" disabled selected>Select desired Membership level</option>
+                            <option value="np">Non Profit Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    <label class="field" for="description">Business/Organization Description
+                        <textarea id="description" name="description" rows="3" title="Provide a brief description of your business or organization"></textarea>
+                    </label>
+                    <button type="submit">JOIN CHAMBER</button>
+                </form>
+            </article>
+            <article>
+                <h2>MEMBERSHIP LEVELS</h2>
+                <div>
+                    <p>PLACEHOLDER FOR MEMBERSHIP LEVEL DETAILS</p>
+                    <button id="btn-np" type="button">Non Profit</button>
+                    <button id="btn-bronze" type="button">Bronze</button>
+                    <button id="btn-silver" type="button">Silver</button>
+                    <button id="btn-gold" type="button">Gold</button>
+                </div>
+            </article>
          </div>
     </main>
+    <dialog>
+        <p>Thank you</p>
+        <p>Your submission has been received.</p>
+    </dialog>
     <footer>
         <div class="address">
             <p>SJC Chamber of Commerce</p>
