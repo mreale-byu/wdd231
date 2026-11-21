@@ -48,7 +48,7 @@
         <h1>Join</h1>
         <div class="join-grid">
             <article class="join-card">
-                <h2>MEMBERSHIP FORM</h2>
+                <h2>Membership Form</h2>
                 <form class="join-form" method="get" action="thankyou.html">
                     <input type="hidden" id="timestamp" name="timestamp" value="">
                     <label class="field" for="first-name">First Name*
@@ -84,10 +84,10 @@
                     <button type="submit">JOIN CHAMBER</button>
                 </form>
             </article>
-            <article>
-                <h2>MEMBERSHIP LEVELS</h2>
-                <div>
-                    <p>PLACEHOLDER FOR MEMBERSHIP LEVEL DETAILS</p>
+            <article class="membership-card">
+                <h2>Membership Levels</h2>
+                <div class="membership-body">
+                    <p>See information about the membership level suitable for your organization needs:</p>
                     <button id="btn-np" type="button">Non Profit</button>
                     <button id="btn-bronze" type="button">Bronze</button>
                     <button id="btn-silver" type="button">Silver</button>
@@ -96,9 +96,12 @@
             </article>
          </div>
     </main>
-    <dialog>
-        <p>Thank you</p>
-        <p>Your submission has been received.</p>
+    <dialog id="join-modal" class="join-modal">
+        <h2 id="join-modal-title"></h2>
+        <div class="join-modal-body">
+            <p id="join-modal-content"></p>
+            <button id="close-modal" type="button">CLOSE</button>
+        </div>
     </dialog>
     <footer>
         <div class="address">

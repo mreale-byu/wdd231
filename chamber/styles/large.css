@@ -244,4 +244,30 @@
 		justify-self: end;
 		text-align: right;
 	}
+
+ 	.join-grid {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		align-items: start;
+	}
+
+	.join-card {
+		grid-column: span 2;
+	}
+
+	.join-form {
+		padding: 1.5rem;
+	}
+
+	.membership-body,
+	.join-modal-body,
+	.thankyou-body {
+		padding: 1.5rem;
+	}
+
+	.join-form button[type='submit'] {
+		width: calc(50% - 2.25rem);
+	}
+
 }
+
+
