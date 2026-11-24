@@ -5,17 +5,17 @@ import { memberCard } from "./directory-template.js";
 
 const spotlight = document.getElementById("spotlight");
 
-function pickRandom(list, count) {
-	const pool = [...list];
-	const picked = [];
+function randomizeList(list) {
+	const items = [...list];
 
-	while (picked.length < count && pool.length > 0) {
-		const index = Math.floor(Math.random() * pool.length);
-		picked.push(pool[index]);
-		pool.splice(index, 1);
+	for (let i = items.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1));
+		const temp = items[i];
+		items[i] = items[j];
+		items[j] = temp;
 	}
 
-	return picked;
+	return items;
 }
 
 function renderSpotlight(members) {
@@ -26,7 +26,7 @@ async function showSpotlight() {
 	try {
 		const records = await fetchMembers();
 		const eligible = records.filter((record) => record.membership === 2 || record.membership === 3);
-		renderSpotlight(prepareMembers(pickRandom(eligible, 3)));
+		renderSpotlight(prepareMembers(randomizeList(eligible).slice(0, 3)));
 	} catch (error) {
 		spotlight.textContent = "The member spotlights could not be loaded.";
 		console.error(error);
