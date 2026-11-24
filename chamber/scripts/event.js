@@ -1,4 +1,4 @@
-/* Loads the event data and renders the upcoming events grid. */
+/* Loads the event data and builds the upcoming events grid. */
 
 import { eventCard } from "./event-template.js";
 
@@ -34,7 +34,9 @@ function prepareEvents(records) {
 }
 
 function renderEvents(events) {
-	eventGrid.innerHTML = events.map(eventCard).join("");
+	const cards = document.createElement("template");
+	cards.innerHTML = events.map(eventCard).join("");
+	eventGrid.replaceChildren(cards.content);
 }
 
 async function showEvents() {
