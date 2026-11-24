@@ -1,4 +1,4 @@
-/* Builds the card markup for one upcoming event. */
+/* Builds the card markup (template) for one upcoming event. */
 
 export function eventCard(event) {
 	return `
