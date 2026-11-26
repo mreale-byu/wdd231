@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="WDD 231: Site plan for the Embraer Aircraft Gallery.">
+<meta name="keywords" content="Embraer, aircraft, aviation, site plan, WDD 231">
+<meta name="author" content="Mauricio Reale">
+<title>Site plan – WDD 231 Project – Embraer Aircraft Gallery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <p class="brand">Embraer Aircraft Gallery</p>
+    <nav class="toc" aria-label="Site plan sections">
+      <ul>
+        <li><a href="#name">Site name</a></li>
+        <li><a href="#purpose">Purpose</a></li>
+        <li><a href="#scenarios">Scenarios</a></li>
+        <li><a href="#sitemap">Site map</a></li>
+        <li><a href="#wireframe">Wireframe</a></li>
+        <li><a href="#colors">Colors</a></li>
+        <li><a href="#typography">Typography</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap intro">
+    <h1>Site plan</h1>
+    <p class="lede">The plan for the Embraer Aircraft Gallery site project. For reference, it uses some of the proposed site colors, style and typography.</p>
+  </div>
+
+  <section id="name" class="plan-section" aria-labelledby="name-title">
+    <div class="wrap">
+      <h2 id="name-title">Site name</h2>
+      <p>The site is called <cite>Embraer Aircraft Gallery</cite>.</p>
+      <p><dfn>Embraer</dfn> is a Brazilian aerospace company that produces commercial, military, executive, and agricultural aircraft.</p>
+      <p><i>Gallery</i> was added because aircraft are presented one model at a time, each with a photo and some basic information, similar to how exhibits are displayed in a "real" gallery.</p>
+    </div>
+  </section>
+
+  <section id="purpose" class="plan-section plan-section--alt" aria-labelledby="purpose-title">
+    <div class="wrap">
+      <h2 id="purpose-title">Purpose</h2>
+      <p>The Embraer Aircraft Gallery is dedicated to showcasing some significant aircraft produced by Embraer, providing enthusiasts and general visitors with a comprehensive resource for historical aviation artifacts and information.</p>
+      <p class="darker-text">Period covered by the site is 1969 to present.</p>
+    </div>
+  </section>
+
+  <section id="scenarios" class="plan-section" aria-labelledby="scenarios-title">
+    <div class="wrap">
+      <h2 id="scenarios-title">Scenarios</h2>
+      <p>Questions that are asked by a site visitor who represents the target audience.</p>
+      <div class="table-wrap" role="region" aria-labelledby="scenarios-caption" tabindex="0">
+        <table>
+          <caption id="scenarios-caption">Visitor questions and where the site answers them</caption>
+          <thead>
+            <tr><th scope="col">Question</th><th scope="col">Answered on</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">What is Embraer?</th><td>Home, intro section</td></tr>
+            <tr><th scope="row">What period of time does this site cover?</th><td>Home, intro section</td></tr>
+            <tr><th scope="row">What are some significant aircraft produced by Embraer?</th><td>Gallery</td></tr>
+            <tr><th scope="row">What are the specifications of these aircraft?</th><td>Gallery</td></tr>
+            <tr><th scope="row">Who contributed to the site?</th><td>Credits</td></tr>
+            <tr><th scope="row">How can I provide feedback?</th><td>Feedback</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="sitemap" class="plan-section plan-section--alt" aria-labelledby="sitemap-title">
+    <div class="wrap">
+      <h2 id="sitemap-title">Site map</h2>
+      <p>Four pages with shared layout. </p>
+      <div class="table-wrap" role="region" aria-labelledby="sitemap-caption" tabindex="0">
+        <table>
+          <caption id="sitemap-caption">Pages, files and main content</caption>
+          <thead>
+            <tr><th scope="col">Page</th><th scope="col">File</th><th scope="col">Main content</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Home</th><td class="mono">index.html</td><td>Hero, intro to Embraer and some basic history of the company</td></tr>
+            <tr><th scope="row">Gallery</th><td class="mono">gallery.html</td><td>Notable aircraft (including the Embraer EMB 110) with photo, year, maker and specs</td></tr>
+            <tr><th scope="row">Credits</th><td class="mono">credits.html</td><td>Credits page with image and content acknowledgments.</td></tr>
+            <tr><th scope="row">Feedback</th><td class="mono">feedback.html</td><td>Feedback form for site visitors to submit comments and questions.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="wireframe" class="plan-section" aria-labelledby="wireframe-title">
+    <div class="wrap">
+      <h2 id="wireframe-title">Wireframe Sketches (Mobile and Desktop)</h2>
+      <p>Home page structure</p>
+      <figure>
+        <img src="images/home-wireframe.webp" width="1460" height="1190" loading="lazy"
+             alt="Black and white wireframe of the home page on mobile and desktop.">
+        <figcaption>Mobile and Desktop wireframes for home page.</figcaption>
+      </figure>
+      <p>Gallery page structure</p>
+      <figure>
+        <img src="images/gallery-wireframe.webp" width="1460" height="1315" loading="lazy"
+             alt="Black and white wireframe of the gallery page on mobile and desktop.">
+        <figcaption>Mobile and Desktop wireframes for gallery page.</figcaption>
+      </figure>
+      <p>Credits page structure</p>
+      <figure>
+        <img src="images/credits-wireframe.webp" width="1460" height="890" loading="lazy"
+             alt="Black and white wireframe of the credits page on mobile and desktop.">
+        <figcaption>Mobile and Desktop wireframes for credits page.</figcaption>
+      </figure>
+      <p>Feedback page structure</p>
+      <figure>
+        <img src="images/feedback-wireframe.webp" width="1460" height="890" loading="lazy"
+             alt="Black and white wireframe of the feedback page on mobile and desktop.">
+        <figcaption>Mobile and Desktop wireframes for feedback page.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="colors" class="plan-section plan-section--alt" aria-labelledby="colors-title">
+    <div class="wrap">
+      <h2 id="colors-title">Colors</h2>
+      <p>Colors are based on the Embraer's corporate colours.</p>
+      <div class="table-wrap" role="region" aria-labelledby="colors-caption" tabindex="0">
+        <table>
+          <caption id="colors-caption">Color tokens and where they are used</caption>
+          <thead>
+            <tr><th scope="col">Name</th><th scope="col">Value (Hex)</th><th scope="col">Where is it used</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row"><span class="swatch swatch--blue-dark" aria-hidden="true"></span>Dark blue</th><td class="mono">#031A39</td><td>Header, footer, tables and cards</td></tr>
+            <tr><th scope="row"><span class="swatch swatch--blue-medium" aria-hidden="true"></span>Medium blue</th><td class="mono">#042A5F</td><td>Page background</td></tr>
+            <tr><th scope="row"><span class="swatch swatch--blue-light" aria-hidden="true"></span>Light blue</th><td class="mono">#093875</td><td>Alternate sections</td></tr>
+            <tr><th scope="row"><span class="swatch swatch--white" aria-hidden="true"></span>White</th><td class="mono">#FFFFFF</td><td>Body text and headings</td></tr>
+            <tr><th scope="row"><span class="swatch swatch--highlight" aria-hidden="true"></span>Highlight</th><td class="mono">#FCC317</td><td>Links, buttons, focus ring</td></tr>
+            <tr><th scope="row"><span class="swatch swatch--darker-text" aria-hidden="true"></span>Darker text</th><td class="mono">#CFD8EE</td><td>Derived: captions and secondary text</td></tr>
+            <tr><th scope="row"><span class="swatch swatch--line" aria-hidden="true"></span>Hairline</th><td class="mono">rgb(255 255 255 / 20%)</td><td>Derived: borders and dividers</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="typography" class="plan-section" aria-labelledby="typography-title">
+    <div class="wrap">
+      <h2 id="typography-title">Typography</h2>
+      <p>Two font families are used across the site: <dfn>Roboto</dfn> and <dfn>Roboto Mono</dfn>.</p>
+      <div class="table-wrap" role="region" aria-labelledby="type-caption" tabindex="0">
+        <table>
+          <caption id="type-caption">Type styles</caption>
+          <thead>
+            <tr><th scope="col">Style</th><th scope="col">Font and weight</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Display (h1)</th><td>Roboto Thin 100</td></tr>
+            <tr><th scope="row">Section heading (h2)</th><td>Roboto Light 300</td></tr>
+            <tr><th scope="row">Body</th><td>Roboto Light 300</td></tr>
+            <tr><th scope="row">Navigation, buttons, labels</th><td>Roboto Regular 400</td></tr>
+            <tr><th scope="row">Data: text, dates, specs</th><td>Roboto Mono Regular 400</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Embraer Aircraft Gallery, site plan. Luiz MR Lemos</p>
+    <p>Updated November 2026.</p>
+    <p><a href="#main">Back to top</a></p>
+  </div>
+</footer>
+</body>
+</html>
